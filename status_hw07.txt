@@ -18,7 +18,8 @@ events.jacrdn.com
 
 4. Is your app functionality complete? If not, what's missing?
 
-to my understanding, it currently meets all of the functionality specified in the "What to Build" section of the assignment page and nothing more
+to my understanding, it currently meets all of the functionality specified in the "What to Build" section of the assignment page and nothing more.
+So yes, it is complete
 
 
 5. Is your app properly deployed? If not, what went wrong?
