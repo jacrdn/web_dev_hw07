@@ -61,9 +61,15 @@ defmodule Events.Users do
 
   """
   def create_user(attrs \\ %{}) do
-    %User{}
-    |> User.changeset(attrs)
-    |> Repo.insert()
+    if attrs[:email] not in Repo.all(from u in User, select: u.email) do
+      %User{}
+      |> User.changeset(attrs)
+      |> Repo.insert()
+    else
+      %User{}
+      |> User.changeset(attrs)
+      |> Repo.update()
+    end
   end
 
   @doc """
